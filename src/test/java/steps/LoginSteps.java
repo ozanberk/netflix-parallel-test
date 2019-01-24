@@ -36,7 +36,7 @@ public class LoginSteps extends TestBase {
     public void loginWithoutPassword(){
         welcomePage.continueToSigInPage();
         signInPage.signIn("netflixautomation@netflix.com", "");
-        Assert.assertEquals(signInPage.getPasswordWarningMessage()," password must contain between 4 and 60 characters.");
+        Assert.assertEquals(signInPage.getPasswordWarningMessage(),"Your password must contain between 4 and 60 characters.");
     }
 
     @Test
